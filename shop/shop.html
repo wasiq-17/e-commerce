@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../shop/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <section id="navigatin-bar">
+      <nav class="navbar navbar-expand-lg navbar-light nav-bar fixed-top">
+        <a class="navbar-brand px-5 logo" href="../index.html"
+          ><h2>SHOEZ-e</h2></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse shortnav pb-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item float-right signin-btn">
+              <a class="nav-link" data-toggle="modal" data-target="#loginmodal"
+                >Signin / Login</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <!-- MODAL Start -->
+    <div class="modal" id="loginmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  placeholder="username"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <h5 class="text-center">OR</h5>
+            <button
+              class="btn btn-dark btn-lg btn-block"
+              data-toggle="modal"
+              data-target="#signupmodal"
+              data-dismiss="modal"
+            >
+              Sign-up
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+
+    <!-- signup modal Start -->
+    <div class="modal" id="signupmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign-up</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Lirst Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailadd">Email address</label>
+                <input
+                  type="text"
+                  placeholder="email address"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--signup Modal end -->
+
+    <!-- MAIN BODY -->
+    <div class="container">
+      <!-- mens shoes -->
+      <div class="mens-heading">
+        <h1 class="display-3 text-center mt-4 mb-4 mt-4">
+          Men's Collection
+        </h1>
+      </div>
+      <div id="men-shoes">
+        <div class="row">
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./men/001.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mens loafer</h5>
+                <h3 class="card-text">Rs-3500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./men/002.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Osco formals</h5>
+                <h3 class="card-text">Rs-4500</h3>
+                <p class="card-text">
+                  allsizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./men/003.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bettles</h5>
+                <h3 class="card-text">Rs-2000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./men/004.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cargo</h5>
+                <h3 class="card-text">Rs-3500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./men/005.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adidas white</h5>
+                <h3 class="card-text">Rs-3000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+        </div>
+      </div>
+      <hr />
+      <!-- womens shoes -->
+      <div class="womens-heading">
+        <h1 class="display-3 text-center mt-4 mb-4 mt-4">Women's Collection</h1>
+      </div>
+      <div id="women-shoes">
+        <div class="row">
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w1.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">ShidiWeikr</h5>
+                <h3 class="card-text">Rs-1800</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">pinsen sneakers</h5>
+                <h3 class="card-text">Rs-2500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w3.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Loafers</h5>
+                <h3 class="card-text">Rs-2000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">birds</h5>
+                <h3 class="card-text">Rs-3500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w5.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">High Heels</h5>
+                <h3 class="card-text">Rs-3500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./women/w6.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MCCKLE</h5>
+                <h3 class="card-text">Rs-3000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+        </div>
+      </div>
+
+      <!-- kids section -->
+      <hr />
+      <div class="kids-heading">
+        <h1 class="display-3 text-center mt-4 mb-4 mt-4">kid's Collection</h1>
+      </div>
+      <div id="kids-shoes">
+        <div class="row">
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./kids/k1.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bata</h5>
+                <h3 class="card-text">Rs-2000</h3>
+                <p class="card-text">
+                  sizes available for age 5 and under.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./kids/k2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fashion</h5>
+                <h3 class="card-text">Rs-1500</h3>
+                <p class="card-text">
+                  sizes available for age 5 and under .
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./kids/k3.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Service</h5>
+                <h3 class="card-text">Rs-1200</h3>
+                <p class="card-text">
+                  sizes available for age 5 and under.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./kids/k4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bata</h5>
+                <h3 class="card-text">Rs-1000</h3>
+                <p class="card-text">
+                  sizes available for age 5 and under.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./kids/k5.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vans</h5>
+                <h3 class="card-text">Rs-1200</h3>
+                <p class="card-text">
+                  sizes available for age 5 and under.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+        </div>
+      </div>
+
+      <!-- sneakers section -->
+      <hr />
+      <div class="sneakers-heading">
+        <h1 class="display-3 text-center mt-4 mb-4 mt-4">Sneakers lovers</h1>
+      </div>
+      <div id="sneakers-shoes">
+        <div class="row">
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s1.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Feather</h5>
+                <h3 class="card-text">Rs-3500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puma</h5>
+                <h3 class="card-text">Rs-2200</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s3.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Converse</h5>
+                <h3 class="card-text">Rs-3000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Girls Sneakers</h5>
+                <h3 class="card-text">Rs-2500</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s5.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vans</h5>
+                <h3 class="card-text">Rs-2000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+          <!-- card start-->
+          <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="card mt-3">
+              <img
+                class="card-img-top"
+                src="./sneakers/s6.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vans</h5>
+                <h3 class="card-text">Rs-2000</h3>
+                <p class="card-text">
+                  all sizes are available.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card ends-->
+        </div>
+      </div>
+
+      <!-- conatiner end -->
+    </div>
+    <!-- footer start -->
+    <section id="footer">
+      <div class="container-fluid">
+        <div class="main-footer">
+          <!-- contact footer -->
+          <div class="row">
+            <div class="col-lg-4 contact-footer">
+              <h2>Contact us on</h2>
+              <a
+                href="https://www.facebook.com/syedwasiq.hussain.75"
+                target="__blank"
+                ><img
+                  src="../image/fb-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Facebook</span>
+              </a>
+              <br />
+              <a
+                href="https://www.instagram.com/syedwasiq.hussain.75/"
+                target="__blank"
+                ><img
+                  src="../image/insta-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Instagram</span>
+              </a>
+            </div>
+
+            <!-- web creator info -->
+            <div class="col-lg-4 designer-footer">
+              <h2>Website created by</h2>
+              <h5 class="display-5">Syed Wasiq Hussain</h5>
+            </div>
+
+            <div class="col-lg-4 inst-footer">
+              <h2>Created for :</h2>
+              <h5 class="display-5">BMJ institute WEB DEVELOPMENT course</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

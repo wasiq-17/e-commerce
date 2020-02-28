@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../about/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <section id="navigatin-bar">
+      <nav class="navbar navbar-expand-lg navbar-light nav-bar fixed-top">
+        <a class="navbar-brand px-5 logo" href="../index.html"
+          ><h2>SHOEZ-e</h2></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse shortnav pb-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../shop/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item float-right signin-btn">
+              <a class="nav-link" data-toggle="modal" data-target="#loginmodal"
+                >Signin / Login</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <!-- MODAL Start -->
+    <div class="modal" id="loginmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  placeholder="username"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <h5 class="text-center">OR</h5>
+            <button
+              class="btn btn-dark btn-lg btn-block"
+              data-toggle="modal"
+              data-target="#signupmodal"
+              data-dismiss="modal"
+            >
+              Sign-up
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+
+    <!-- signup modal Start -->
+    <div class="modal" id="signupmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign-up</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Lirst Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailadd">Email address</label>
+                <input
+                  type="text"
+                  placeholder="email address"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--signup Modal end -->
+
+    <!-- about heading -->
+    <div class="aboutus-head">
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+      <div class="heading">
+        <h1>About US</h1>
+      </div>
+    </div>
+    <div class="container">
+      <!-- about company -->
+
+      <div class="about-company text-center mt-4">
+        <h1 class="display-2">Our Company</h1>
+        <p class="lead">
+          The motive of our company is to create a comfortable and stylish
+          footwear for you because Our feet are the founation of our everyday
+          lives. Every good foundation must have the right support. Most of our
+          lives are spent in shoes. Anyone can go out and buy a new pair of
+          shoes based simply on how they look, but for the person who is always
+          and always on their feet; good footwear is worth its weight in gold
+        </p>
+      </div>
+      <!-- About company maker -->
+      <div class="about-me text-center">
+        <h1 class="display-2">about the designer</h1>
+        <div class="my-img">
+          <img class="my-image" src="./img2.jpg" />
+        </div>
+        <p class="lead mt-5 w-75 p-3 about">
+          Hi ! i am Wasiq ,I studied in University of Karachi my passion is web
+          designing so here i am full filling with a great joy and dedication
+        </p>
+      </div>
+    </div>
+    <!-- footer start -->
+    <section id="footer">
+      <div class="container-fluid">
+        <div class="main-footer">
+          <!-- contact footer -->
+          <div class="row">
+            <div class="col-lg-4 contact-footer">
+              <h2>Contact us on</h2>
+              <a
+                href="https://www.facebook.com/syedwasiq.hussain.75"
+                target="__blank"
+                ><img
+                  src="../image/fb-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Facebook</span>
+              </a>
+              <br />
+              <a
+                href="https://www.instagram.com/syedwasiq.hussain.75/"
+                target="__blank"
+                ><img
+                  src="../image/insta-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Instagram</span>
+              </a>
+            </div>
+
+            <!-- web creator info -->
+            <div class="col-lg-4 designer-footer">
+              <h2>Website created by</h2>
+              <h5 class="display-5">Syed Wasiq Hussain</h5>
+            </div>
+
+            <div class="col-lg-4 inst-footer">
+              <h2>Created for :</h2>
+              <h5 class="display-5">BMJ institute WEB DEVELOPMENT course</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

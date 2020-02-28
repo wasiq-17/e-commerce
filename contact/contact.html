@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../contact/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <section id="navigatin-bar">
+      <nav class="navbar navbar-expand-lg navbar-light nav-bar fixed-top">
+        <a class="navbar-brand px-5 logo" href="../index.html"
+          ><h2>SHOEZ-e</h2></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse shortnav pb-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../shop/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item float-right signin-btn">
+              <a class="nav-link" data-toggle="modal" data-target="#loginmodal"
+                >Signin / Login</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <!-- MODAL Start -->
+    <div class="modal" id="loginmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  placeholder="username"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <h5 class="text-center">OR</h5>
+            <button
+              class="btn btn-dark btn-lg btn-block"
+              data-toggle="modal"
+              data-target="#signupmodal"
+              data-dismiss="modal"
+            >
+              Sign-up
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+
+    <!-- signup modal Start -->
+    <div class="modal" id="signupmodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign-up</h5>
+            <button class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Lirst Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailadd">Email address</label>
+                <input
+                  type="text"
+                  placeholder="email address"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-dismiss="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--signup Modal end -->
+
+    <div class="container main-body">
+      <div class="contact-section text-center">
+        <h1 class="display-4">Contact us on:</h1>
+        <p class="mt-4">
+          Address : <span class="address">p-sherman 42-wallabay,Sydney</span>
+        </p>
+        <p>
+          Conatct no :
+          <span class="address">03**-********** or 03**-*********</span>
+        </p>
+      </div>
+
+      <div class="maps text-center">
+        <h1 class="display-5 border border-dark rounded-pill">OR</h1>
+        <h1 class="display-3 mt-4 mb-4" style="text-decoration: underline;">
+          find Us
+        </h1>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.1824113320185!2d150.60140491520735!3d-33.75595188068768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12883f97111b4b%3A0x8d4ee0f3248ff1af!2sRock%20Wallaby%20Way%2C%20Blaxland%20NSW%202774%2C%20Australia!5e0!3m2!1sen!2s!4v1582808678132!5m2!1sen!2s"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <section id="footer">
+      <div class="container-fluid">
+        <div class="main-footer">
+          <!-- contact footer -->
+          <div class="row">
+            <div class="col-lg-4 contact-footer">
+              <h2>Contact us on</h2>
+              <a
+                href="https://www.facebook.com/syedwasiq.hussain.75"
+                target="__blank"
+                ><img
+                  src="../image/fb-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Facebook</span>
+              </a>
+              <br />
+              <a
+                href="https://www.instagram.com/syedwasiq.hussain.75/"
+                target="__blank"
+                ><img
+                  src="../image/insta-logo.svg"
+                  style="width: 15px; height: 15px;"
+                />
+                <span class="mt-1 ml-2">Instagram</span>
+              </a>
+            </div>
+
+            <!-- web creator info -->
+            <div class="col-lg-4 designer-footer">
+              <h2>Website created by</h2>
+              <h5 class="display-5">Syed Wasiq Hussain</h5>
+            </div>
+
+            <div class="col-lg-4 inst-footer">
+              <h2>Created for :</h2>
+              <h5 class="display-5">BMJ institute WEB DEVELOPMENT course</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

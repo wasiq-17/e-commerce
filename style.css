@@ -1,0 +1,312 @@
+/* body {
+  background-color: rgb(46, 44, 44);
+}
+#header {
+  z-index: 1;
+  top: 0px;
+  left: 2px;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+}
+#logo {
+  position: fixed;
+  float: left;
+  width: 20.4%;
+  background-color: yellow;
+  border: 2px solid yellow;
+  text-align: center;
+  border-radius: 9px;
+}
+ul {
+  position: fixed;
+  left: 282px;
+  height: 71px;
+  display: inline;
+  float: left;
+  background-color: black;
+  width: 79%;
+  margin: 0;
+  padding: 0;
+  border-radius: 9px;
+}
+.search-button {
+  float: left;
+  padding: 14px;
+  margin: 11px;
+  border-radius: 9px;
+  background-color: yellow;
+}
+.signin {
+  float: right;
+  padding: 14px;
+  margin: 11px;
+  border-radius: 9px;
+  background-color: yellow;
+}
+.search-block {
+  float: left;
+  padding: 14px;
+  margin: 11px;
+  margin-left: 75px;
+  border-radius: 9px;
+}
+
+li {
+  float: left;
+  display: inline;
+  padding: 26px;
+}
+li > a {
+  text-decoration: none;
+  font-size: large;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+}
+ li a:hover {
+          background-color: yellow;
+          color: black;
+          border-radius: 9px;
+        }
+li:hover {
+  background: yellow;
+  border-radius: 9px;
+}
+#main-body {
+}
+
+intro
+
+.intro img {
+
+  width: 100%;
+  height: 546px;
+  margin-top: 72px;
+  border-radius: 9px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 600px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  width: 90%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intro:hover .image {
+  opacity: 0.3;
+}
+
+.intro:hover .middle {
+  width: 90%;
+  color: yellow;
+  font-size: 40px;
+  opacity: 1;
+}
+
+.container {
+  margin: 0px 5%;
+}
+NEW ARRIVAL 
+
+.new-arrival h2 {
+  margin: 8px 10%;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 9px;
+  padding: 20px;
+  height: 10%;
+}
+
+.main {
+  
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 2px yellow;
+  border: outset 10px transparent;
+}
+
+.pics {
+  width: 100%;
+ 
+}
+
+.pics > div {
+  margin: 10px;
+  padding: 27px;
+}
+.img1,
+.img2,
+.img3 {
+  text-align: center;
+  color: rgb(139, 136, 136);
+ 
+  float: left;
+  width: 27%;
+  margin: 5px;
+  padding: 15px;
+  background-color: black;
+  border-radius: 9px;
+}
+.img1 > input,
+.img2 > input,
+.img3 > input {
+  padding: 14px;
+  margin: 11px;
+  border-radius: 9px;
+  background-color: yellow;
+  border: none;
+}
+
+.brand {
+  width: 100%;
+}
+.brand-heading {
+  width: 80%;
+  float: left;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 9px;
+  padding: 20px;
+  height: 10%;
+}
+
+.brand1,
+.brand2,
+.brand3,
+.brand4 {
+  text-align: center;
+
+  float: left;
+  width: 22%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+ .img1:hover {
+  text-align: center;
+  color: yellow;
+  box-shadow: 2px 2px 25px 2px white;
+  border-radius: 12px;
+  empty-cells: show;
+}
+
+.img2:hover {
+  color: yellow;
+  box-shadow: 2px 2px 25px 2px white;
+  border-radius: 12px;
+  empty-cells: show;
+}
+
+.img3:hover {
+  color: yellow;
+  box-shadow: 2px 2px 25px 2px white;
+  border-radius: 12px;
+  empty-cells: show;
+}  */
+.shortnav {
+  background-color: #b7a483;
+  border-bottom: 1px solid #584119;
+
+  float: left;
+}
+.nav-bar {
+  height: 12%;
+  background-color: #b7a483;
+  border-bottom: 4px solid #584119;
+}
+.logo {
+  font-weight: bold;
+  font-style: italic;
+  font-family: cursive;
+}
+li a {
+  font-size: 20px;
+  color: black;
+}
+
+li a:hover {
+  background-color: #584119;
+  border-radius: 5px;
+}
+
+.container-intro {
+  position: relative;
+  width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  height: 10%;
+}
+.container-intro img {
+  height: 750px;
+  width: 100%;
+}
+
+.container-intro .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/* body */
+
+.features {
+  background: linear-gradient(to bottom, #ac5b09 0%, #755636 100%);
+  border: 1px solid #584119;
+  border-radius: 8px;
+}
+.features > h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.new-arrival img {
+  height: 288px;
+  width: 100%;
+}
+
+/* footer css*/
+.main-footer {
+  margin-top: 30px;
+  width: 100%;
+  background-color: black;
+}
+.contact-footer,
+.designer-footer,
+.inst-footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.signin-btn a:hover {
+  cursor: pointer;
+}

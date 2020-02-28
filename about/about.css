@@ -1,0 +1,32 @@
+.aboutus-head {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 10%;
+  text-align: center;
+}
+.aboutus-head img {
+  margin-top: 5%;
+  height: 500px;
+  width: 100%;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.aboutus-head .heading {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.my-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+.about {
+  margin: 0 auto;
+}

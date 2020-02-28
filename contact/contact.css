@@ -1,0 +1,10 @@
+.main-body {
+  margin-top: 10%;
+}
+.contact-section > h1 {
+  text-decoration: underline;
+}
+.address {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+}
